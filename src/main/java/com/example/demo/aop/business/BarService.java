@@ -14,11 +14,9 @@ public class BarService {
 
     public String calculateSomething() throws Exception {
         try {
-            return barDao.retrieveSomething()[0];
+            return barDao.retrieveSomething();
         } catch (Exception ex){
             throw new Exception("BarService failed!");
-        } finally {
-            return "Failed!";
         }
     }
 }

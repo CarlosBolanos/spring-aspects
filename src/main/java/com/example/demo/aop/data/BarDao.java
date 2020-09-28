@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class BarDao {
 
-    public String[] retrieveSomething(){
-        return new String[] {};
+    public String retrieveSomething(){
+        return "BarDao";
     }
 }

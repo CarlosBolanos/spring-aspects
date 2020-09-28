@@ -30,7 +30,9 @@ public class DemoApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		LOGGER.info("{}", fooService.calculateSomething());
-		LOGGER.info("{}", barService.calculateSomething());
+		var foo = fooService.calculateSomething();
+		var bar = barService.calculateSomething();
+		LOGGER.info("Foo {}", foo);
+		LOGGER.info("Bar {}", bar);
 	}
 }
